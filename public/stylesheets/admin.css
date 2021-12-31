@@ -1,0 +1,16 @@
+#paisaje {
+    background: url(02.jpg) 50% 0 fixed;
+    background-size: cover;
+    min-height: 900px;
+    width: 100%;
+}
+
+.h2{
+    color: white;
+    font-size: 1.7em;
+}
+
+tr{
+    background-color: white;
+    border-radius: 10%;
+}

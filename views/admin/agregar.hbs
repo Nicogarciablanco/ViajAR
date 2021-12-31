@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="h2">Agregar Destino</h2>
+            <form action="/admin/destinos/agregar" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="titulo" placeholder="Titulo" name="titulo">
+                </div>
+                <div class="mb-3">
+                    <textarea type="text" class="form-control" id="subtitulo" placeholder="Subtitulo"
+                        name="subtitulo"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label> imagen: <input type='file' name='imagen' /></label>
+                </div>
+                <div class="mb-3">
+                    <textarea type="text" class="form-control" id="link" placeholder="Link"
+                        name="link"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light">Insertar Destino</button>
+            </form>
+            {{#if message}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

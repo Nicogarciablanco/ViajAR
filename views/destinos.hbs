@@ -1,0 +1,17 @@
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/General.css" />
+  <link rel="stylesheet" href="stylesheets/destinos.css">
+<body id="paisaje" data-speed="4" class="background">
+<main class="holder">
+  {{#each destinos}}
+    <div class="destino">
+      <div class="info">
+        <h3>{{titulo}}</h3>
+        <p>{{subtitulo}}</p>
+      </div>
+      <a href="{{link}}">{{#if imagen}}<img src="{{imagen}}" alt="">{{/if}}</a>
+    </div>
+        {{/each}}
+</main>
+
+ 

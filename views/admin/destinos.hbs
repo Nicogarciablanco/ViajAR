@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="/stylesheets/destinos2.css">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p class="text-end"> Hola {{usuario}}! <a href="/admin/login/logout" class="btn btn-danger"> Cerrar sesion
+                    <i class="fas fa-sign-out-alt"></i></a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <h3>Listado de destinos</h3>
+        </div>
+        <div style="margin-bottom: 10px;" class="col-5 text-end">
+            <a href="/admin/destinos/agregar" class="btn btn-success"> <i class="fas fa-plus"></i> Nuevo</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-light">
+                        <th scope="col">#</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">subtitulo</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Link</th>
+                        <th scope="col" class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each destinos}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td>{{subtitulo}}</td>
+                        <td>{{{imagen}}}</td>
+                        <td>{{link}}</td>
+                        <td class="margen text-end">
+                            <a href="/admin/destinos/modificar/{{id}}" class="  btn btn-secondary"> <i
+                                    class="fas fa-edit"></i> Modificar</a>
+                            <a href="/admin/destinos/eliminar/{{id}}" class="btn btn-secondary"> <i
+                                    class="fas fa-trash"></i> Borrar </a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+.destino{
+    border-radius: 8px;
+    padding-top: 100px;
+    margin-bottom: 200px;
+    overflow: hidden;
+    margin: 1px;
+}
+
+#paisaje {
+    background: url(02.jpg) 50% 0 fixed;
+    background-size: cover;
+    min-height: 900px;
+    width: 100%;
+    fill-opacity: 70%;
+}
+
+.destino .info{
+    max-width: 45%;
+}
+
+.destino .info h3{
+    color: white;
+    font-size: 23px;
+    letter-spacing: 15px;
+    font-weight: 500; 
+    display: inline-block;
+    border-bottom: 3px solid white;
+}
+
+.destino .info p{
+    font-size: 1.2em;
+    display: inline-block;
+    color: white;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.destino:nth-child(even) img{
+    float: left;
+} 
+
+.destino:nth-child(even) .info{
+    float: right;
+} 
+
+.destino:nth-child(odd) img{
+    float: right;
+} 
+
+.destino:nth-child(odd) .info{
+    float: left;
+    
+} 
+
+.footer{
+    border: 10px transparent ease;
+    padding-top: 100px;
+    color: white;
+}

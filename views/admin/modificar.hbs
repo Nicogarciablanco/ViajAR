@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/stylesheets/modificar.css">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="color">Modificar Destinos</h2>
+            <form action="/admin/destinos/modificar" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="{{destinos.id}}"/>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="titulo" placeholder="Titulo" name="titulo" value="{{destinos.titulo}}">
+                </div>
+                <div class="mb-3">
+                    <textarea type="text" class="form-control" id="subtitulo" placeholder="Subtitulo"
+                        name="subtitulo">{{destinos.subtitulo}}</textarea>
+                </div>
+                <div class="mb-3">
+                    <p class="color"> Imagen: <input type='file' name='imagen' /> {{destinos.imagen}} </p>
+                    <p>
+                        <label class="color"> <input type="checkbox" name="img_delete" value="1"> Eliminar la imagen actual? </label>
+                        <input type="hidden" name="img_original" value="{{destinos.img_id}}"/>
+                    </p>
+                </div>
+                <div class="mb-3">
+                    <textarea type="text" class="form-control" id="link" placeholder="Contenido"
+                        name="link"> {{destinos.link}} </textarea>
+                </div>
+                <button type="submit" class="btn btn-light">Modificar Destino</button>
+            </form>
+            {{#if message}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

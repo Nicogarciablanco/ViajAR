@@ -1,0 +1,64 @@
+#paisaje {
+    background: url(02.jpg) 50% 0 fixed;
+    background-size: cover;
+    min-height: 900px;
+    width: 100%;
+}
+
+.contacto,
+.redes {
+    color: white;
+    width: 50%;
+    box-sizing: border-box;
+
+}
+
+.contacto {
+    float: left;
+    border-right: 2px solid #ccc;
+}
+
+.redes {
+    float: right;
+    padding-left: 60px;
+}
+
+.formulario input,
+.formulario textarea {
+     border-radius: 3px; 
+    border: 1px solid #999;
+    background-color: white;
+    padding: 5px;
+    width: 90%;
+}
+
+.formulario label {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 100px;
+}
+
+.formulario input[type="submit"] {
+    width: 50px;
+    height: 30px;
+    box-shadow: 0 0 5px #ccc;
+    border: 10px;
+    transition: 1s;
+}
+
+.centrar {
+    text-align: center;
+}
+
+
+.formulario input[type="submit"]:hover {
+    background-color: gray;
+    width: 60px;
+    height: 40px;
+}
+

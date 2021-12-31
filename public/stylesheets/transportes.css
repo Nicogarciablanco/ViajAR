@@ -1,0 +1,37 @@
+#paisaje {
+  background: url(02.jpg) 50% 0 fixed;
+  background-size: cover;
+  min-height: 900px;
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+.card{
+    margin-top: 120px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.card-group{
+    height: 100px;
+}
+
+footer{
+  clear: both;
+  margin-top: 500px;
+}
+
+.btn{
+  background-color: gray;
+  border: gray;
+  cursor: grab;
+  transition: 1s;
+}
+
+.btn:hover{
+  background-color: rgb(196, 196, 196);
+}

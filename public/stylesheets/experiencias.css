@@ -1,0 +1,7 @@
+#paisaje {
+    background: url(01.jpg) 50% 0 fixed;
+    background-size: cover;
+    min-height: 900px;
+    width: 100%;
+}
+
